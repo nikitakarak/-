@@ -31,6 +31,14 @@ namespace WindowsFormsApp1
             pictureBox1.Image = bitmap;
         }
 
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                e.Cancel = true;
+            }
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             graph.FillEllipse(new SolidBrush(Color.Green), 750, 750, 10, 10);
