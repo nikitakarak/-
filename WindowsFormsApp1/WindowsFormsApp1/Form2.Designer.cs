@@ -47,7 +47,7 @@
             // 
             // input
             // 
-            this.input.Location = new System.Drawing.Point(240, 371);
+            this.input.Location = new System.Drawing.Point(164, 308);
             this.input.Name = "input";
             this.input.Size = new System.Drawing.Size(75, 23);
             this.input.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // answer
             // 
-            this.answer.Location = new System.Drawing.Point(162, 317);
+            this.answer.Location = new System.Drawing.Point(93, 280);
             this.answer.Name = "answer";
             this.answer.Size = new System.Drawing.Size(223, 22);
             this.answer.TabIndex = 2;
@@ -65,19 +65,23 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.question);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(110, 12);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(56, 54);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(337, 272);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(290, 220);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(580, 648);
+            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.blurMonopolyField;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(402, 395);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.answer);
             this.Controls.Add(this.input);
+            this.MaximumSize = new System.Drawing.Size(420, 442);
+            this.MinimumSize = new System.Drawing.Size(420, 442);
             this.Name = "Form2";
             this.Text = "Form2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);

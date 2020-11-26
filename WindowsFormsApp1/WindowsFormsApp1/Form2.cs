@@ -27,10 +27,10 @@ namespace WindowsFormsApp1
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            
+            flowLayoutPanel1.BackColor = Color.Transparent;
             if (FormInfo.questionClass)
             {
-                question.Text = readQuestions4Class[number4Class];
+                question.Text = "Для выращивания рассады школьники приготовили 250 граммов семян капусты, а семян помидоров - в 2 раза меньше, чем семян капусты. Семена разложили в пакетики, по 25 граммов в каждый. Сколько понадобилось пакетиков для семян?";
                 number4Class++;
             }
             else
